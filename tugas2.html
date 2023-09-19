@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+    <link rel="stylesheet" type="text/css" href="tugas2.css">
+</head>
+<body>
+    <div class="wrap"></div>
+    <div class="container"></div>
+    <td colspan="2">
+        <h4><br><p align="center">DATA MAHASISWA/I YANG IKUT CABANG OLAHRAGA FASILKOM-TI</p></h4>
+        <link rel="stylesheet" type="text/css" href="tugas2.css">
+    </td>
+    <br> 
+
+    <form action="register.php"></form>
+    <table border="0" align="center">
+        <!-- ini keterangan tanpa label -->
+        Username
+        <td>:</td>
+        <input type="text" name="nama pengguna" placeholder="input username" required>
+        <br>
+
+        <!-- ini keterangan dengan label -->
+        <label for="sandi">Password</label>
+        <input type="Password" id="sandi" required>
+        <br>
+
+        <!-- ini keterangan tanpa label -->
+        Email
+        <input type="text" name="email pengguna" required>
+        <br>
+
+        <label for="tempat">Tempat/</label>
+        <label for="tanggal_lahir">Tanggal lahir</label>
+        <input type="text" name="tempat">
+        <input type="date" name="tl" id="tanggal_lahir">
+        <br>
+
+        Gender
+        <label for="gender"></label>
+        <input type="radio" name="gender" id="lk" value="pria">Laki-laki</label>
+        <input type="radio" name="gender" id="pr" value="wanita">Perempuan</label>
+        <br>
+
+        <!-- ini keterangan tanpa label -->
+        NIM
+        <input type="number" name="nim pengguna" required>
+        <br>
+
+        <label for="jurusan">Pilih Program Studi Anda</label>
+        <select name="jurusan" id="jurusan">
+            <option value="S1 Teknologi Informasi">S1 Teknologi Informasi</option>
+            <option value="S1 Ilmu Komputer">S1 Ilmu Komputer</option>
+            <option value="S2 Teknik Informatika">S2 Teknik Informatika</option>
+            <option value="S2 DSAI">S2 Sains Data dan Kecerdasan Buatan</option>
+            <option value="S3 Ilmu komputer"> S3 Ilmu Komputer</option>
+        </select>
+        <br>
+        <br>
+
+        Pilih cabang olahraga yang ingin diikuti<br>
+        <input type="checkbox">Futsal<br>
+        <input type="checkbox">Basket<br>
+        <input type="checkbox">Badminton<br>
+        <input type="checkbox">Billiard<br>
+        <input type="checkbox">E-sport<br>
+        <input type="checkbox">Lainnya<br>
+        <br>
+
+        <label for="e-sport">Game yang paling sering dimainkan (jika memilih E-sport)</label>
+        <select name="e-sport" id="e-sport">
+            <option value="Mobile Legend">Mobile Legend</option>
+            <option value="PUBG">PUBG</option>
+            <option value="Free Fire">Free Fire</option>
+            <option value="Valorant">Valorant</option>
+            <option value="Genshin Impact">Genshin Impact</option>
+            <option value="Clash of Clans">Clash of Clans</option>
+            <option value="Lainnya">Lainnya</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="alasan">Alasan memilih olahraga tersebut</label>
+        <br>
+        <textarea name="alasan" id="alasan" cols="80" rows="10"></textarea>
+        <br>
+
+        <label for="alasan tidak">Alasan tidak memilih olahraga tersebut</label>
+        <br>
+        <textarea name="alasan tidak" id="alasan tidak" cols="80" rows="10"></textarea>
+        <br>
+
+        Siap membayar iuran?? (Jika memilih)
+        <br>
+        <label for="iuran"></label>
+        <input type="radio" name="iuran" id="ya">Ya</label>
+        <input type="radio" name="iuran" id="tidak">Tidak</label>
+        <br>
+        <br>
+
+        <input type="submit" value="Daftar">
+        <button type="reset">Hapus Form</button> 
+
+    </table>
+    </form>
+
+
+</body>
+</html>
